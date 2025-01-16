@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+:root {
+
+    --cor-principal: black;
+    --cor-secundaria: #FFD523;
+    --cor-terciaria: #4747475b;
+    --hover-cor: #ffd72398;
+
+    --fonte-principal: "Bebas Neue", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body { 
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: rgb(255, 255, 255);
+}
+
+.conteudo-tudo {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    padding: 5% 2%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos-e-links {
+    width: 40%;
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;  
+    gap: 1rem;
+}
+
+.titulo-negrito {
+    color: var(--cor-secundaria);
+    
+}
+
+.textos {
+   display: flex;
+   flex-direction: column;
+   gap: 0.625rem;
+}
+
+.imagem {
+    width: 29%;
+    margin-left: 5%;
+}
+
+.mensagem-e-link {
+    display: flex;
+    gap:0.625rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.mensagem {
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+}
+
+.titulo {
+    font-size: 1.7rem;
+    font-family: var(--fonte-principal);
+}
+
+.paragrafo {
+    font-size: 1.1rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.links {
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    width: 77%;
+}
+
+.link {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-principal);
+    border-radius: 0.6rem;
+    width: 33%;
+    border: 0.06rem solid var(--cor-secundaria);
+    padding: 1.5%;
+    font-size: 0.875rem;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.link:hover {
+    background-color: var(--hover-cor);
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    padding: 1%;
+    text-align: center;
+    color: var(--hover-cor);
+    font-size: 1.1rem;
+}
+
+.cabecalho {
+    background-color: var(--cor-terciaria);
+    padding: 1% 0% 0% 15%;
+}
+
+.menu-cabecalho {
+    display: flex;
+    padding-bottom: 1%;
+    gap: 2%;
+}
+
+.link-menu {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--hover-cor);
+}
+
+.imagem-links {
+    width: 1.2rem;
+}
