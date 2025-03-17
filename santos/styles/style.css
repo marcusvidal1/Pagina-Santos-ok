@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+:root {
+    --background-dark: #121212;
+    --background-light: #F6F6F6;
+    --primary-color: #FFC107;
+    --secondary-color: #343A40;
+    --hover-color: #FFD54F;
+    --font-title: "Bebas Neue", sans-serif;
+    --font-text: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: white;
+    font-family: var(--font-text);
+}
+
+/* 📌 Cabeçalho */
+.header {
+    background-color: var(--secondary-color);
+    padding: 1% 15%;
+}
+
+.menu {
+    display: flex;
+    gap: 2%;
+    padding-bottom: 1%;
+}
+
+.menu-link {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--hover-color);
+    transition: color 0.3s ease-in-out;
+    margin-left: 5vw;
+}
+
+.menu-link:hover {
+    color: var(--primary-color);
+}
+
+/* 📌 Conteúdo */
+.content {
+    padding: 5% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info {
+    width: 40%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title-highlight {
+    color: var(--primary-color);
+}
+
+.paragraph {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* 📌 Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📌 Imagem */
+.image-container {
+    text-align: center;
+    position: relative;
+}
+
+.image {
+    width: 350px;
+    border-radius: 10px;
+    transition: filter 0.5s ease-in-out;
+    margin-top: 15vh;
+}
+
+.image-button {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.image-button:hover {
+    background-color: var(--hover-color);
+}
+
+/* 📌 Redes Sociais */
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.social-title {
+    font-size: 1.25rem;
+    font-family: var(--font-title);
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    gap: 0.5vw;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    border: 2px solid var(--primary-color);
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--background-dark);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.social-icon {
+    width: 1.2rem;
+}
+
+/* 📌 Rodapé */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 1%;
+    text-align: center;
+    color: var(--hover-color);
+    font-size: 1.1rem;
+}
+
+/* 📌 Responsividade */
+@media (max-width: 768px) {
+    .info {
+        width: 80%;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
